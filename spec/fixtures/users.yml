@@ -1,0 +1,159 @@
+data1:
+  id: 1
+  login: koto
+  email: koto@example.com
+  crypted_password: 8e4d75878f26b7bb05ed0b14dddde06f6a6705cb
+  salt: 8fc763b034ab89b9996e6e645c6e1bd175e651d8
+  employee_id: 1
+
+data2:
+  id: 2
+  login: otaki
+  email: otaki@example.com
+  crypted_password: 8e4d75878f26b7bb05ed0b14dddde06f6a6705cb
+  salt: 8fc763b034ab89b9996e6e645c6e1bd175e651d8
+  employee_id: 2
+
+data3:
+  id: 3
+  login: rinmi
+  email: rinmi@example.com
+  crypted_password: 8e4d75878f26b7bb05ed0b14dddde06f6a6705cb
+  salt: 8fc763b034ab89b9996e6e645c6e1bd175e651d8
+  employee_id: 3
+
+data4:
+  id: 4
+  login: kariya
+  email: kariya@example.com
+  crypted_password: 8e4d75878f26b7bb05ed0b14dddde06f6a6705cb
+  salt: 8fc763b034ab89b9996e6e645c6e1bd175e651d8
+  employee_id: 4
+
+data5:
+  id: 5
+  login: uomura
+  email: uomura@example.com
+  crypted_password: 8e4d75878f26b7bb05ed0b14dddde06f6a6705cb
+  salt: 8fc763b034ab89b9996e6e645c6e1bd175e651d8
+  employee_id: 5
+
+data6:
+  id: 6
+  login: konki
+  email: konki@example.com
+  crypted_password: 8e4d75878f26b7bb05ed0b14dddde06f6a6705cb
+  salt: 8fc763b034ab89b9996e6e645c6e1bd175e651d8
+  employee_id: 6
+
+data7:
+  id: 7
+  login: aria
+  email: aria@example.com
+  crypted_password: 8e4d75878f26b7bb05ed0b14dddde06f6a6705cb
+  salt: 8fc763b034ab89b9996e6e645c6e1bd175e651d8
+  employee_id: 7
+
+data8:
+  id: 8
+  login: shigeyoshi
+  email: shigeyoshi@example.com
+  crypted_password: 8e4d75878f26b7bb05ed0b14dddde06f6a6705cb
+  salt: 8fc763b034ab89b9996e6e645c6e1bd175e651d8
+  employee_id: 8
+
+data9:
+  id: 9
+  login: edamame
+  email: edamame@example.com
+  crypted_password: 8e4d75878f26b7bb05ed0b14dddde06f6a6705cb
+  salt: 8fc763b034ab89b9996e6e645c6e1bd175e651d8
+  employee_id: 9
+
+data10:
+  id: 10
+  login: shimada
+  email: shimada@example.com
+  crypted_password: 8e4d75878f26b7bb05ed0b14dddde06f6a6705cb
+  salt: 8fc763b034ab89b9996e6e645c6e1bd175e651d8
+  employee_id: 10
+
+data11:
+  id: 11
+  login: toshiaki
+  email: toshiaki@example.com
+  crypted_password: 8e4d75878f26b7bb05ed0b14dddde06f6a6705cb
+  salt: 8fc763b034ab89b9996e6e645c6e1bd175e651d8
+  employee_id: 11
+
+data12:
+  id: 12
+  login: edokoro
+  email: edokoro@example.com
+  crypted_password: 8e4d75878f26b7bb05ed0b14dddde06f6a6705cb
+  salt: 8fc763b034ab89b9996e6e645c6e1bd175e651d8
+  employee_id: 12
+
+data13:
+  id: 13
+  login: nashimoto
+  email: nashimoto@example.com
+  crypted_password: 8e4d75878f26b7bb05ed0b14dddde06f6a6705cb
+  salt: 8fc763b034ab89b9996e6e645c6e1bd175e651d8
+  employee_id: 13
+
+data14:
+  id: 14
+  login: takami
+  email: takami@example.com
+  crypted_password: 8e4d75878f26b7bb05ed0b14dddde06f6a6705cb
+  salt: 8fc763b034ab89b9996e6e645c6e1bd175e651d8
+  employee_id: 14
+
+data15:
+  id: 15
+  login: jyojima
+  email: jyojima@example.com
+  crypted_password: 8e4d75878f26b7bb05ed0b14dddde06f6a6705cb
+  salt: 8fc763b034ab89b9996e6e645c6e1bd175e651d8
+  employee_id: 15
+
+data16:
+  id: 16
+  login: nose
+  email: nose@example.com
+  crypted_password: 8e4d75878f26b7bb05ed0b14dddde06f6a6705cb
+  salt: 8fc763b034ab89b9996e6e645c6e1bd175e651d8
+  employee_id: 16
+
+data17:
+  id: 17
+  login: tsurusaki
+  email: tsurusaki@example.com
+  crypted_password: 8e4d75878f26b7bb05ed0b14dddde06f6a6705cb
+  salt: 8fc763b034ab89b9996e6e645c6e1bd175e651d8
+  employee_id: 17
+
+data18:
+  id: 18
+  login: chiga
+  email: chiga@example.com
+  crypted_password: 8e4d75878f26b7bb05ed0b14dddde06f6a6705cb
+  salt: 8fc763b034ab89b9996e6e645c6e1bd175e651d8
+  employee_id: 18
+
+data19:
+  id: 19
+  login: kohinata
+  email: kohinata@example.com
+  crypted_password: 8e4d75878f26b7bb05ed0b14dddde06f6a6705cb
+  salt: 8fc763b034ab89b9996e6e645c6e1bd175e651d8
+  employee_id: 19
+
+data20:
+  id: 20
+  login: hoaki
+  email: hoaki@example.com
+  crypted_password: 8e4d75878f26b7bb05ed0b14dddde06f6a6705cb
+  salt: 8fc763b034ab89b9996e6e645c6e1bd175e651d8
+  employee_id: 20

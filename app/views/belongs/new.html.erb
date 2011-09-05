@@ -1,0 +1,27 @@
+<h1><%=t 'link.new' %> <%=t 'belongs' %></h1>
+
+<% form_for(@belong) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :employee_id %><br />
+    <%= f.text_field :employee_id %>
+  </p>
+  <p>
+    <%= f.label :division_id %><br />
+    <%= f.text_field :division_id %>
+  </p>
+  <p>
+    <%= f.label :post_id %><br />
+    <%= f.text_field :post_id %>
+  </p>
+  <p>
+    <%= f.label :primary_flag %><br />
+    <%= f.text_field :primary_flag %>
+  </p>
+  <p>
+    <%= f.submit I18n.t('submit.create') %>
+  </p>
+<% end %>
+
+<%= link_to I18n.t('link.back'), belongs_path %>

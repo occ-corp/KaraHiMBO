@@ -1,0 +1,35 @@
+data1:
+  id: 1
+  value: 170
+  year: 2009
+  month: 4
+  year_month: 200904
+  item_id: 1
+  belong_id: 1
+
+data2:
+  id: 2
+  value: 200
+  year: 2009
+  month: 8
+  year_month: 200908
+  item_id: 1
+  belong_id: 2
+
+data3:
+  id: 3
+  value: 800
+  year: 2009
+  month: 8
+  year_month: 200908
+  item_id: 1
+  belong_id: 4
+
+data4:
+  id: 4
+  value: 88
+  year: 2010
+  month: 1
+  year_month: 201001
+  item_id: 1
+  belong_id: 1

@@ -1,0 +1,23 @@
+<p>
+  <b><%= Belong.human_attribute_name(:employee_id) %>:</b>
+  <%=h @belong.employee_id %>
+</p>
+
+<p>
+  <b><%= Belong.human_attribute_name(:division_id) %>:</b>
+  <%=h @belong.division_id %>
+</p>
+
+<p>
+  <b><%= Belong.human_attribute_name(:post_id) %>:</b>
+  <%=h @belong.post_id %>
+</p>
+
+<p>
+  <b><%= Belong.human_attribute_name(:primary_flag) %>:</b>
+  <%=h @belong.primary_flag %>
+</p>
+
+
+<%= link_to t('link.edit'), edit_belong_path(@belong) %> |
+<%= link_to I18n.t('link.back'), belongs_path %>

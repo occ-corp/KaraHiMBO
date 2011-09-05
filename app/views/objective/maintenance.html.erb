@@ -1,0 +1,66 @@
+<%= link_to t(:views_objective_sigma_grid_back_to_select_division), {:action => :maintenance, :id => nil} %>
+
+<h2><%= @division.name %></h2>
+<h3><%= link_to(t(:views_objective_sigma_grid_create_first_category),
+                             {:controller => :first_categories, :action => :new,
+                               :division_id => @division.id},
+                             {:class => 'add_link'}) %></h3>
+
+<table id="objective_table" summary="objectives_maintenance">
+  <tbody>
+    <thead>
+      <tr>
+            <td><%= FirstCategory.human_name %></td>
+            <td><%= SecondCategory.human_name %></td>
+            <td><%= Item.human_name %></td>
+      </tr>
+    </thead>
+    <% fc_id = sc_id = item_id = 0 %>
+        <% @objectives.each do |o| %>
+          <tr>
+                <td class="category">
+              <% if fc_id != o.first_category_id %>
+                    <% fc_id = o.first_category_id %>
+                    <span class="item"><%=h o.first_category %></span>
+                    <%= link_to t(:views_objective_maintenance_edit), edit_first_category_path(o.first_category_id, :division_id => @division.id) %>
+                    <%= link_to t(:views_objective_maintenance_destroy),
+                            url_for(:controller => :first_categories, :action => :destroy, :id => o.first_category_id),
+                :confirm => t(:views_objective_maintenance_confirm), :method => :delete %>
+                    <%= link_to(t(:views_objective_maintenance_add),
+                                            {:controller => :second_categories, :action => :new,
+                                              :first_category_id => fc_id,
+                                              :division_id => @division.id},
+                                                {:class => 'add_link'}) %>
+                  <% end %>
+                </td>
+
+                <td class="category">
+              <% if o.second_category && sc_id != o.second_category_id %>
+                    <span class="item"><%=h o.second_category %></span>
+                    <% sc_id = o.second_category_id %>
+                    <%= link_to t(:views_objective_maintenance_edit), edit_second_category_path(o.second_category_id, :division_id => @division.id) %>
+                    <%= link_to t(:views_objective_maintenance_destroy),
+                            url_for(:controller => :second_categories, :action => :destroy, :id => o.second_category_id),
+                :confirm => t(:views_objective_maintenance_confirm), :method => :delete %>
+                    <%= link_to(t(:views_objective_maintenance_add),
+                                            {:controller => :items, :action => :new,
+                                              :second_category_id => sc_id,
+                                              :division_id => @division.id},
+                                                {:class => 'add_link'} ) %>
+                  <% end %>
+                </td>
+            <td class="item">
+              <% if o.item && item_id != o.item_id %>
+                    <%=h o.name %>
+                    <%= link_to t(:views_objective_maintenance_edit), edit_item_path(o.item_id,
+                                                   :root => @division.id) %>
+                    <%= link_to t(:views_objective_maintenance_destroy),
+                            url_for(:controller => :items, :action => :destroy, :id => o.item_id, :root_division => @division.id),
+                :confirm => t(:views_objective_maintenance_confirm2), :method => :delete %>
+                    <% item_id = o.item_id %>
+              <% end %>
+            </td>
+          </tr>
+        <% end %>
+  </tbody>
+</table>

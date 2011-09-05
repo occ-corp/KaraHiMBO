@@ -1,0 +1,23 @@
+<%= render :partial => '/shared/settings_head' %>
+<h1><%=t 'heading.listing' %><%=t 'second_categories' %></h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>First category</th>
+  </tr>
+
+<% @second_categories.each do |second_category| %>
+  <tr>
+    <td><%=h second_category.name %></td>
+    <td><%=h second_category.first_category_id %></td>
+    <td><%= link_to t('link.show'), second_category %></td>
+    <td><%= link_to t('link.edit'), edit_second_category_path(second_category) %></td>
+    <td><%= link_to t('link.destroy'), second_category, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to "#{t('link.new')} #{t('second_categories')}", new_second_category_path %>

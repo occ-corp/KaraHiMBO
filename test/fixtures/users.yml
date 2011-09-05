@@ -1,0 +1,220 @@
+data1:
+  id: 1
+  login: admin
+  name: 
+  email: admin@example.co.jp
+  crypted_password: abb080429fa75db939fd64b721c80e3020118034
+  salt: 1103f273f63c27e4ab5d58148abad3115962d17d
+  created_at: 2009-11-25 09:40:17
+  updated_at: 2011-08-12 06:47:09.066772
+  employee_id: 1
+
+data2:
+  id: 2
+  login: iwamichi
+  name: 
+  email: iwamichi@example.co.jp
+  crypted_password: 9902dab6ad5b6d0d469dd05f0ed56ca89a3b9878
+  salt: 4ea5a029f2fd06138f0b4f055041b6a535104727
+  created_at: 2009-11-24 21:02:24
+  updated_at: 2011-08-12 06:47:09.084904
+  employee_id: 2
+
+data3:
+  id: 3
+  login: uenoya
+  name: 
+  email: uenoya@example.co.jp
+  crypted_password: 028c5af47f1305dc0b76598b9ac4a15de9fc1936
+  salt: a6d1446ef06ba03f235fbffbb2a48f9e2eddaa8b
+  created_at: 2009-11-24 21:02:24
+  updated_at: 2011-08-12 06:47:09.101239
+  employee_id: 3
+
+data4:
+  id: 4
+  login: ueyonabaru
+  name: 
+  email: ueyonabaru@example.co.jp
+  crypted_password: 524933dfdb5987dd1d37378c54d0279b2ac52958
+  salt: d40ebdaf28480fa06a8e7f676ecbff2920043048
+  created_at: 2009-11-24 21:02:24
+  updated_at: 2011-08-12 06:47:09.117962
+  employee_id: 4
+
+data5:
+  id: 5
+  login: unten
+  name: 
+  email: unten@example.co.jp
+  crypted_password: 721202afe7a90eb569846a3e7034601419fd2fed
+  salt: 6bcc18ff4c939c978ffe50d85d890aaba217687b
+  created_at: 2009-11-24 21:02:24
+  updated_at: 2011-08-12 06:47:09.13406
+  employee_id: 5
+
+data6:
+  id: 6
+  login: urasaki
+  name: 
+  email: urasaki@example.co.jp
+  crypted_password: 8a9d915122131d782733e3ee2def9d7f73c8f340
+  salt: 82bbf39b04f34a96649cdecb7c551f4715801aff
+  created_at: 2009-11-24 21:02:24
+  updated_at: 2011-08-12 06:47:09.150424
+  employee_id: 6
+
+data7:
+  id: 7
+  login: ushiduka
+  name: 
+  email: ushiduka@example.co.jp
+  crypted_password: eb240c457f9d8ebeb1aa739118594f1ce427a2a1
+  salt: 60d8085d863af218b78b4eeeaf9cb1dec8f13fbf
+  created_at: 2009-11-24 21:02:24
+  updated_at: 2011-08-12 06:47:09.170925
+  employee_id: 7
+
+data8:
+  id: 8
+  login: ura
+  name: 
+  email: ura@example.co.jp
+  crypted_password: 3e4658a8d7705ec2ab8af6ce123508b283bf3340
+  salt: ada2be629e1c5e343f251e9574dfc6bbe464a397
+  created_at: 2009-11-24 21:02:24
+  updated_at: 2011-08-12 06:47:09.253625
+  employee_id: 8
+
+data9:
+  id: 9
+  login: uchizato
+  name: 
+  email: uchizato@example.co.jp
+  crypted_password: d94c6b9071259c651ba929f659f8ad0b09b3f6b4
+  salt: 799c20a6409f39edf52261d6e24e12e414a43745
+  created_at: 2009-11-24 21:02:24
+  updated_at: 2011-08-12 06:47:09.271833
+  employee_id: 9
+
+data10:
+  id: 10
+  login: omokawa
+  name: 
+  email: omokawa@example.co.jp
+  crypted_password: be5d7544fd09dda6d8c8db159c4858541b1abf3c
+  salt: bfc38203f32fe8b95b31175b720002a4e25f9262
+  created_at: 2009-11-24 21:02:24
+  updated_at: 2011-08-12 06:47:09.093173
+  employee_id: 10
+
+data11:
+  id: 11
+  login: kaneuchi
+  name: 
+  email: kaneuchi@example.co.jp
+  crypted_password: 27ec4112f6b495f04ea77a3e8e5a0151a3dd7aab
+  salt: 258c3532300abc6645badde3ae4129b9ee7e16c2
+  created_at: 2009-11-24 21:02:24
+  updated_at: 2011-08-12 06:47:09.109367
+  employee_id: 11
+
+data12:
+  id: 12
+  login: kumura
+  name: 
+  email: kumura@example.co.jp
+  crypted_password: 53aedff78a4d5c01075494aac2743352e28ce67a
+  salt: 952aa65001c38187f5d8e17c883fdcdc28c61f67
+  created_at: 2009-11-24 21:02:24
+  updated_at: 2011-08-12 06:47:09.125994
+  employee_id: 12
+
+data13:
+  id: 13
+  login: kunijima
+  name: 
+  email: kunijima@example.co.jp
+  crypted_password: 686a97cd2db718179eb1086d11c311a50e785079
+  salt: a8b7574ba3f284786803dd7eaad6e689d9b7064f
+  created_at: 2009-11-24 21:02:24
+  updated_at: 2011-08-12 06:47:09.142218
+  employee_id: 13
+
+data14:
+  id: 14
+  login: sakashiro
+  name: 
+  email: sakashiro@example.co.jp
+  crypted_password: 1d544bf50fed987d38e071d8f1bf5b5ad97ab838
+  salt: 4be39716d504f9fef62a583abfdbcf74e194a066
+  created_at: 2009-11-24 21:02:24
+  updated_at: 2011-08-12 06:47:09.161225
+  employee_id: 14
+
+data15:
+  id: 15
+  login: tasato
+  name: 
+  email: tasato@example.co.jp
+  crypted_password: f39f1015a9b18e2d4b44f82283309e1efca658bd
+  salt: dd26ab220044432a34a5fb0ba8d44f74b405faff
+  created_at: 2009-11-24 21:02:24
+  updated_at: 2011-08-12 06:47:09.179724
+  employee_id: 15
+
+data16:
+  id: 16
+  login: nakoshi
+  name: 
+  email: nakoshi@example.co.jp
+  crypted_password: efe45405548994c2352ba0c104de4040e8e51bdb
+  salt: 57e5deb427195d1971d14d4c96fc3b48842b92f9
+  created_at: 2009-11-24 21:02:24
+  updated_at: 2011-08-12 06:47:09.262716
+  employee_id: 16
+
+data17:
+  id: 17
+  login: mori
+  name: 
+  email: mori@example.co.jp
+  crypted_password: 455e2d15892de56682a2cddeccc6bb5df5c3946a
+  salt: a9b54b62bfcaf3e982c1efbc515fc64d54e14c48
+  created_at: 2009-11-24 21:02:24
+  updated_at: 2011-08-12 06:47:09.039494
+  employee_id: 17
+
+data18:
+  id: 18
+  login: wakuta
+  name: 
+  email: wakuta@example.co.jp
+  crypted_password: 7092022d890d0060e926ca5bbaf4bc1d724bb936
+  salt: 5b4f53ab6cb0f0924f0d2355e29bcb3c3bc8e246
+  created_at: 2009-11-24 21:02:24
+  updated_at: 2011-08-12 06:47:09.050232
+  employee_id: 18
+
+data19:
+  id: 19
+  login: yonehama
+  name: 
+  email: yonehama@example.co.jp
+  crypted_password: abefae6b8b49b604581626efeb09b7a5ba361a80
+  salt: dfe9f67d6f87f928e162b3880157faf3eef9f0ca
+  created_at: 2009-11-24 21:02:24
+  updated_at: 2011-08-12 06:47:09.058639
+  employee_id: 19
+
+data20:
+  id: 21
+  login: akata
+  name: 
+  email: akata@example.co.jp
+  crypted_password: 68ebf15a16cc403626f8f6f668ddb50e780074ba
+  salt: 9220969d716e94d8f44066a3beea511ed860ec49
+  created_at: 2011-07-28 11:16:16.365256
+  updated_at: 2011-08-12 06:47:09.074997
+  employee_id: 21
+

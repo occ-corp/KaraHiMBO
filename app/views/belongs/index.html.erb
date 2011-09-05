@@ -1,0 +1,27 @@
+<%= render :partial => '/shared/settings_head' %>
+<h1><%=t 'heading.listing' %><%=t 'belongs' %></h1>
+
+<table>
+  <tr>
+    <th><%= Belong.human_attribute_name(:employee_id) %></th>
+    <th><%= Belong.human_attribute_name(:division_id) %></th>
+    <th><%= Belong.human_attribute_name(:post_id) %></th>
+    <th><%= Belong.human_attribute_name(:primary_flag) %></th>
+  </tr>
+
+<% @belongs.each do |belong| %>
+  <tr>
+    <td><%=h belong.employee_id %></td>
+    <td><%=h belong.division_id %></td>
+    <td><%=h belong.post_id %></td>
+    <td><%=h belong.primary_flag %></td>
+    <td><%= link_to t('link.show'), belong %></td>
+    <td><%= link_to t('link.edit'), edit_belong_path(belong) %></td>
+    <td><%= link_to t('link.destroy'), belong, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to "#{t('link.new')} #{t('belongs')}", new_belong_path %>

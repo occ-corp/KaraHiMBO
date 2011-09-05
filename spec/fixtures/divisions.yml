@@ -1,0 +1,64 @@
+#       (id = 1)
+#          *
+#        /    \
+#   (3) *      * (2)
+#       |    /   \ 
+#   (6) *   *     * (4)
+#       |  (5)
+#   (7) *      
+#
+
+data1:
+  id: 1
+  code: 101
+  name: 全社
+  lft: 1
+  rgt: 14
+
+data2:
+  id: 2
+  code: 102
+  name: 研究開発部門
+  parent_id: 1
+  lft: 2
+  rgt: 7
+
+data3:
+  id: 3
+  code: 103
+  name: 営業販売部門
+  parent_id: 1
+  lft: 8
+  rgt: 13
+
+data4:
+  id: 4
+  code: 104
+  name: システム開発部門
+  parent_id: 2
+  lft: 3
+  rgt: 4
+
+data5:
+  id: 5
+  code: 105
+  name: 技術支援部
+  parent_id: 2
+  lft: 5
+  rgt: 6
+
+data6:
+  id: 6
+  code: 106
+  name: 営業部
+  parent_id: 3
+  lft: 9
+  rgt: 12
+
+data7:
+  id: 7
+  code: 107
+  name: 販売課
+  parent_id: 6
+  lft: 10
+  rgt: 11

@@ -1,0 +1,21 @@
+<%= render :partial => '/shared/settings_head' %>
+<h1><%=t 'heading.listing' %><%=t 'comparisons' %></h1>
+
+<table>
+  <tr>
+    <th><%= Comparison.human_attribute_name(:name) %></th>
+  </tr>
+
+<% @comparisons.each do |comparison| %>
+  <tr>
+    <td><%=h comparison.name %></td>
+    <td><%= link_to t('link.show'), comparison %></td>
+    <td><%= link_to t('link.edit'), edit_comparison_path(comparison) %></td>
+    <td><%= link_to t('link.destroy'), comparison, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to "#{t('link.new')} #{t('comparisons')}", new_comparison_path %>

@@ -1,0 +1,19 @@
+<% form_for(@second_category) do |f| %>
+  <%= f.error_messages %>
+  <table>
+   <tr>
+     <td><%= FirstCategory.human_name %></td>
+     <td>
+           <%=h FirstCategory.find(@second_category.first_category_id).name %>
+           <%= f.hidden_field :first_category_id %></td>
+   </tr>
+  <tr>
+    <td><%= SecondCategory.human_name %></td>
+    <td><%= f.text_field :name %></td>
+  </tr>
+  </table>
+
+  <p>
+    <%= f.submit value %>
+  </p>
+<% end %>

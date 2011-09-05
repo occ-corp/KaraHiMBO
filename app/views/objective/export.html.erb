@@ -1,0 +1,34 @@
+<h1><%= t(:views_objective_export_heading) %></h1>
+
+<div id="objective_export_description">
+<%= t(:views_objective_export_description) %>
+
+</div>
+
+<% form_tag({:action => :export_file}, {:id => :export_form}) do %>
+  <%= t(:views_objective_export_select_fiscal_year) %>
+  <%= radio_button_tag(:extract_period, "1", true) %>
+  <%= select_of_period(:period_year, @period_year) %>
+  <br />
+  <%= t(:views_objective_export_select_year) %>
+  <%= radio_button_tag(:extract_period, "2", false) %>
+  <%= select_of_years_range(@start_date, @end_date, "　#{t(:views_objective_export_range_separator)}　") %>
+
+  <% section_map(:division, :table => {:id => :divisions}) do |division| %>
+    <div class="division_name"><%= division.name %></div>
+    <ul>
+      <% division.employees.each do |employee| %>
+        <li>
+          <%= check_box_tag("belongs[]",
+                            Belong.find(:first, :conditions => {
+                                          :employee_id => employee.id,
+                                          :division_id => division.id
+                                        }).id) %>
+          <%=h employee.name %>
+        </li>
+      <% end %>
+    </ul>
+  <% end %>
+
+  <%= submit_tag(t(:views_objective_export_submit)) %>
+<% end %>

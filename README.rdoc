@@ -1,0 +1,73 @@
+== MBO on Rails
+
+MBO on Rails is a data sheet management system for MBO.
+
+Management by Objectives (MBO) is a process of defining objectives
+within an organization so that management and employees agree to
+the objectives and understand what they need to do in the
+organization. See http://en.wikipedia.org/wiki/Management_by_objectives
+for more details.
+
+== REQUIREMENTS
+
+This system will work fine in Debian GNU/Linux 6.0, and on
+Ruby on Rails 2.3.12.
+
+MBO on Rails depends on following packages,
+
+* Ruby 1.8.7
+* RubyGems 1.8.7
+* PostgreSQL 8.4
+
+and following gem packages.
+
+* rails (2.3.12)
+* postgres-pr (0.6.3)
+* activeldap (1.2.4)
+
+Followings are optional.
+
+* rspec (1.3.2)
+* rspec-rails (1.3.4)
+
+== INSTALLATION
+
+Install dependent gem packages.
+
+  gem install rdoc
+  gem install rails -v=2.3.12
+  gem install postgres-pr
+  gem install rspec -v=1.3.2
+  gem install rspec-rails -v=1.3.4
+  gem install activeldap -v=1.2.4
+
+Initialize the database.
+
+  cp config/database.yml.example config/database.yml
+  rake db:create:all
+  rake db:migrate
+
+Load fixtures into the database.
+
+  rake db:fixtures:load
+
+Test the installation by running WEBrick web server.
+
+  ruby script/server
+
+Open your browser with http://localhost:3000.
+You will see the application welcome page.
+
+Use default administrator account to log in.
+
+* login:admin
+* password:admin
+
+== LICENSE
+
+MBO on Rails is free software licensed under AGPL V3, 
+see LICENSE.txt for more information.
+
+== CONTACT
+
+OCC Corporation. 

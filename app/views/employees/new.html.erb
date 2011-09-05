@@ -1,0 +1,23 @@
+<h1><%=t 'link.new' %> <%=t 'employees' %></h1>
+
+<% form_for(@employee) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :code %><br />
+    <%= f.text_field :code %>
+  </p>
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :role_id %><br />
+    <%= f.text_field :role_id %>
+  </p>
+  <p>
+    <%= f.submit I18n.t('submit.create') %>
+  </p>
+<% end %>
+
+<%= link_to I18n.t('link.back'), employees_path %>

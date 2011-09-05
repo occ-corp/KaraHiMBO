@@ -1,0 +1,24 @@
+data1:
+  id: 1
+  name: 部門長
+  rank: 1
+
+data2:
+  id: 2
+  name: 部長
+  rank: 2
+
+data3:
+  id: 3
+  name: 課長
+  rank: 3
+
+data4:
+  id: 4
+  name: 主任
+  rank: 4
+
+data5:
+  id: 5
+  name: エキスパート
+  rank: 5

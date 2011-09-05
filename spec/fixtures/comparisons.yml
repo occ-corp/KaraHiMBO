@@ -1,0 +1,12 @@
+data3:
+  id: 1
+  name: 以上を目指す
+  created_at: 2009-11-18 04:11:30
+  updated_at: 2009-11-18 04:11:30
+
+data4:
+  id: 2
+  name: 以下に抑える
+  created_at: 2009-11-18 04:11:30
+  updated_at: 2009-11-18 04:11:30
+

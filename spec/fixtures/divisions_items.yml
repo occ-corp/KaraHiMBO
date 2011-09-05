@@ -1,0 +1,48 @@
+# -*- coding: utf-8 -*-
+# | (1) 正しい挨拶               | (1) 全社                   |
+# | (2) 3階廊下                  | (3) 営業販売部門           |
+# | (3) 第2休憩所で休憩          | (4) 総合情報システム開発部 |
+# | (4) 休憩所で休憩             | (1)                        |
+# | (5) 社員IDカードの忘れ数低減 | (1)                        |
+# | (6) 残業時間の低減           | (1)                        |
+# | (7) 4階廊下                  | (2) 研究開発部門           |
+#
+# - 「3階廊下」 は 営業販売部門以下に所属する社員のみ
+# - 「4階廊下」 は 研究開発部門以下に所属する社員のみ
+# - 「第2休憩所で休憩」 は 総合情報システム開発部以下に所属する社員のみ
+
+
+data1:
+  id: 1
+  item_id: 2
+  division_id: 3
+
+data2:
+  id: 2
+  item_id: 4
+  division_id: 1
+
+data3:
+  id: 3
+  item_id: 5
+  division_id: 1
+
+data4:
+  id: 4
+  item_id: 6
+  division_id: 1
+
+data5:
+  id: 5
+  item_id: 1
+  division_id: 1
+
+data6:
+  id: 6
+  item_id: 3
+  division_id: 4
+
+data7:
+  id: 7
+  item_id: 7
+  division_id: 2

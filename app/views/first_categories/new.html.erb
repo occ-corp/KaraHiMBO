@@ -1,0 +1,6 @@
+<h1><%=t 'link.new' %> <%=t 'first_categories' %></h1>
+
+<%= render :partial => 'form', :locals => {:value => I18n.t('submit.create')} %>
+
+<%= link_to I18n.t('link.back'), {:controller => :objective, :action => :maintenance,
+	:id => @division_id} %>

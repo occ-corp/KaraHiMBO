@@ -1,0 +1,12 @@
+= TODO
+
+* pass all the tests
+* better setting windows for
+
+  * divisions
+  * employees
+  * system users
+  * roles
+
+* more flexible evaluation feature
+* overall review of the user interface

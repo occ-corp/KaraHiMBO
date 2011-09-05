@@ -1,0 +1,17 @@
+/* Override here any style definide by web-app-theme */
+#container {
+  width: 100%;
+}
+
+#main {  
+  width: 100%;
+  float: left;    
+}
+
+#user-navigation ul li.account_name span.name {
+	color: #00dd99;
+}
+
+#user-navigation ul li.account_name span.msg {
+	color: #ff8800;
+}

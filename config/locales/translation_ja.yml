@@ -1,0 +1,107 @@
+ja:
+  activerecord:
+    models:
+      user: "ユーザー"
+      divisions_item: "部課別詳細"
+      comparison: "比較"
+      item: "詳細内容"
+      second_category: "課題"
+      actual: "実績"
+      employee: "従業員"
+      belong: "所属"
+      role: "ロール"
+      first_category: "区分"
+      division: "部課"
+      post: "役職"
+
+    attributes:
+      user:
+        login: "ログイン"
+        name: "氏名"
+        email: "email"
+        crypted_password: "crypted password"
+        salt: "salt"
+        remember_token: "remember token"
+        remember_token_expires_at: "remember token expires at"
+        employee: "従業員"
+
+      divisions_item:
+        item: "詳細内容"
+        division: "部課"
+
+      comparison:
+        name: "比較名"
+        items: "詳細内容"
+
+      item:
+        name: "項目名"
+        unit: "単位"
+        entire_index: "目標指数(部課年間目標)"
+        person_year_index: "目標指数(個人年間目標)"
+        person_month_index: "目標指数(個人月間目標)"
+        target_index: "目標指数"
+        comparison_id: "比較"
+        divisions: "部課"
+        divisions_items: "部課別詳細"
+        second_category: "課題"
+        actuals: "実績"
+
+      second_category:
+        name: "課題名"
+        first_category: "区分"
+        items: "詳細内容"
+
+      actual:
+        value: "値"
+        year: "年"
+        month: "月"
+        year_month: "年月"
+        belong: "所属"
+        item: "詳細内容"
+
+      employee:
+        code: "従業員コード"
+        name: "氏名"
+        belongs: "所属"
+        divisions: "部課"
+        user: "ユーザー"
+        posts: "役職"
+        post: "役職"
+        role_id: "ロール"
+
+      belong:
+        primary_flag: "優先所属フラグ"
+        employee_id: "従業員"
+        division_id: "部課"
+        actuals: "実績"
+        post_id: "役職"
+
+      role:
+        name: "ロール名"
+        permission: "アクセス権"
+        employees: "従業員"
+
+      first_category:
+        name: "区分名"
+        second_categories: "課題"
+        division: "部課"
+
+      division:
+        code: "部課コード"
+        name: "部課名"
+        lft: "lft"
+        rgt: "rgt"
+        belongs: "所属"
+        first_categories: "区分"
+        employees: "従業員"
+        divisions_items: "部課別詳細"
+        items: "詳細内容"
+        posts: "役職"
+        parent_id: "親部課"
+
+      post:
+        name: "役職名"
+        rank: "ランク"
+        belongs: "所属"
+        employees: "従業員"
+        divisions: "部課"

@@ -1,0 +1,23 @@
+<%= render :partial => '/shared/settings_head' %>
+<h1><%=t 'heading.listing' %><%=t 'divisions_items' %></h1>
+
+<table>
+  <tr>
+    <th>Item</th>
+    <th>Division</th>
+  </tr>
+
+<% @divisions_items.each do |divisions_item| %>
+  <tr>
+    <td><%=h divisions_item.item_id %></td>
+    <td><%=h divisions_item.division_id %></td>
+    <td><%= link_to t('link.show'), divisions_item %></td>
+    <td><%= link_to t('link.edit'), edit_divisions_item_path(divisions_item) %></td>
+    <td><%= link_to t('link.destroy'), divisions_item, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to "#{t('link.new')} #{t('divisions_items')}", new_divisions_item_path %>

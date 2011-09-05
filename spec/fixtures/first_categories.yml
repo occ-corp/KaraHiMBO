@@ -1,0 +1,15 @@
+data1:
+  id: 1
+  name: (1) 朝の目的
+  division_id: 1
+
+data2:
+  id: 2
+  name: (2) 昼の目的
+  division_id: 1
+
+data3:
+  id: 3
+  name: (3) 夜の目的
+  division_id: 1
+

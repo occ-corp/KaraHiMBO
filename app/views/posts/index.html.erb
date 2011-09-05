@@ -1,0 +1,21 @@
+<%= render :partial => '/shared/settings_head' %>
+<h1><%=t 'heading.listing' %><%=t 'posts' %></h1>
+
+<table>
+  <tr>
+    <th><%= Post.human_attribute_name(:name) %></th>
+  </tr>
+
+<% @posts.each do |post| %>
+  <tr>
+    <td><%=h post.name %></td>
+    <td><%= link_to t('link.show'), post %></td>
+    <td><%= link_to t('link.edit'), edit_post_path(post) %></td>
+    <td><%= link_to t('link.destroy'), post, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to "#{t('link.new')} #{t('posts')}", new_post_path %>

@@ -1,0 +1,104 @@
+table#objective_table {
+	border: 1px solid #999999;
+	margin-bottom: 10px;
+}
+
+table#objective_table thead {
+	background-color: #666666;
+	color: #ccccfc;
+	font-weight: bold;
+}
+
+table#objective_table tr td {
+	font-size: larger;
+	vertical-align: text-top;
+	padding-bottom: 10px;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
+table#objective_table tr td.category {
+	text-align: right;
+}
+
+table#objective_table tr td span {
+	font-size: larger;
+	font-weight: bold;
+}
+table#objective_table tr td.item {
+	text-align: left;
+}
+
+a.add_link {
+    color: #ffffff;
+    border: solid 1px #666666;
+	font-size: x-small;
+    font-weight: bold;
+    background-color: #888888;
+    text-decoration: none;
+}
+
+table#select_table {
+    margin-bottom: 20px;
+}
+
+table#select_table tr td.name {
+	font-weight: bold;
+    padding-right: 20px;
+}
+
+table#select_table tr td.select {
+}
+
+table#select_table tr td.select select {
+	width: 100%;
+}
+
+table#select_table tr td.select_date date_select {
+    float: left;
+}
+
+div#print_rank {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: larger;
+}
+
+div#print_rank span#rank {
+    font-weight: bold;
+}
+
+span.actual_rank {
+    font-weight: bold;
+}
+
+div#objective_export_description {
+    font-size: larger;
+    margin-bottom: 20px;
+}
+
+table#divisions {
+    border: 1px solid #999999;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+table#divisions td {
+    border: 1px solid #999999;
+    padding: 10px;
+}
+
+table#divisions td ul {
+    list-style: none;
+}
+
+table#divisions td div.division_name{
+    vertial-align: top;
+    border-bottom: 1px solid #999999;
+    margin-bottom: 5px;
+}
+
+ul#rank_table {
+    font-size: larger;
+    font-weight: bold;
+}

@@ -1,0 +1,159 @@
+data1:
+  id: 1
+  code: 0
+  name: システム開発者
+  created_at: 2009-11-25 09:40:17
+  updated_at: 2009-11-25 09:40:17
+  role_id: 1
+
+data2:
+  id: 2
+  code: 228
+  name: 岩道光
+  created_at: 2009-11-24 08:28:30.70969
+  updated_at: 2009-11-24 08:28:30.70969
+  role_id: 0
+
+data3:
+  id: 3
+  code: 0394
+  name: 上之屋克洋
+  created_at: 2009-11-24 08:28:30.73969
+  updated_at: 2009-11-24 08:28:30.73969
+  role_id: 0
+
+data4:
+  id: 4
+  code: 0390
+  name: 上與那原寛明
+  created_at: 2009-11-24 08:28:30.73969
+  updated_at: 2009-11-24 08:28:30.73969
+  role_id: 0
+
+data5:
+  id: 5
+  code: 0583
+  name: 上運天嘉則
+  created_at: 2009-11-24 08:28:30.73969
+  updated_at: 2009-11-24 08:28:30.73969
+  role_id: 2
+
+data6:
+  id: 6
+  code: 9008
+  name: 浦崎吉彦
+  created_at: 2009-11-24 08:28:30.73969
+  updated_at: 2009-11-24 08:28:30.73969
+  role_id: 2
+
+data7:
+  id: 7
+  code: 0189
+  name: 牛塚国廣
+  created_at: 2009-11-24 08:28:30.73969
+  updated_at: 2009-11-24 08:28:30.73969
+  role_id: 2
+
+data8:
+  id: 8
+  code: 0388
+  name: 宇良竜多
+  created_at: 2009-11-24 08:28:30.73969
+  updated_at: 2009-11-24 08:28:30.73969
+  role_id: 2
+
+data9:
+  id: 9
+  code: 0589
+  name: 内里真人
+  created_at: 2009-11-24 08:28:30.73969
+  updated_at: 2009-11-24 08:28:30.73969
+  role_id: 2
+
+data10:
+  id: 10
+  code: 195
+  name: 面川覚
+  created_at: 2009-11-24 08:28:30.73969
+  updated_at: 2009-11-25 11:13:25.821297
+  role_id: 0
+
+data11:
+  id: 11
+  code: 167
+  name: 金内修
+  created_at: 2009-11-24 08:28:30.73969
+  updated_at: 2009-11-24 08:28:30.73969
+  role_id: 2
+
+data12:
+  id: 12
+  code: 0581
+  name: 久村茂治
+  created_at: 2009-11-24 08:28:30.73969
+  updated_at: 2009-11-24 08:28:30.73969
+  role_id: 2
+
+data13:
+  id: 13
+  code: 0379
+  name: 国島純人
+  created_at: 2009-11-24 08:28:30.75969
+  updated_at: 2009-11-24 08:28:30.75969
+  role_id: 2
+
+data14:
+  id: 14
+  code: 7134
+  name: 坂白香代子
+  created_at: 2009-11-24 08:28:30.75969
+  updated_at: 2009-11-24 08:28:30.75969
+  role_id: 2
+
+data15:
+  id: 15
+  code: 1448
+  name: 田里雄大
+  created_at: 2009-11-24 08:28:30.75969
+  updated_at: 2009-11-24 08:28:30.75969
+  role_id: 2
+
+data16:
+  id: 16
+  code: 185
+  name: 名越昇
+  created_at: 2009-11-24 08:28:30.75969
+  updated_at: 2009-11-24 08:28:30.75969
+  role_id: 2
+
+data17:
+  id: 17
+  code: 7278
+  name: 森可南子
+  created_at: 2009-11-24 08:28:30.75969
+  updated_at: 2009-11-24 08:28:30.75969
+  role_id: 2
+
+data18:
+  id: 18
+  code: 0609
+  name: 湧田健治
+  created_at: 2009-11-24 08:28:30.75969
+  updated_at: 2009-11-24 08:28:30.75969
+  role_id: 2
+
+data19:
+  id: 19
+  code: 0186
+  name: 米浜一典
+  created_at: 2009-11-24 08:39:27.869603
+  updated_at: 2009-11-24 08:39:27.869603
+  role_id: 0
+
+data20:
+  id: 21
+  code: 0452
+  name: 赤田一英
+  created_at: 2011-07-28 11:18:04.899354
+  updated_at: 2011-07-28 11:18:04.899354
+

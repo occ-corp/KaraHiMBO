@@ -1,0 +1,20 @@
+<h1><%=t 'heading.editing' %> <%=t 'roles' %></h1>
+
+<% form_for(@role) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :permission %><br />
+    <%= f.text_field :permission %>
+  </p>
+  <p>
+    <%= f.submit I18n.t('submit.update') %>
+  </p>
+<% end %>
+
+<%= link_to t('link.show'), @role %> |
+<%= link_to I18n.t('link.back'), roles_path %>

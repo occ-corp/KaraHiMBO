@@ -1,0 +1,25 @@
+data1:
+  id: 1
+  name: 挨拶
+  first_category_id: 1
+
+data2:
+  id: 2
+  name: 清掃
+  first_category_id: 1
+
+data3:
+  id: 3
+  name: 休憩
+  first_category_id: 2
+
+data4:
+  id: 4
+  name: 昼食
+  first_category_id: 2
+
+data5:
+  id: 5
+  name: 残業しない
+  first_category_id: 3
+

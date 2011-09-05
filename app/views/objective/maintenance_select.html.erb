@@ -1,0 +1,10 @@
+<%= render :partial => '/shared/settings_head' %>
+
+<br />
+<%= t(:views_objective_maintenance_select_division) %>
+
+<ul style="padding-bottom:20px;">
+  <% @divisions.each do |d| %>
+        <li><%= link_to d.name, {:action => :maintenance, :id => d.id } %> </li>
+  <% end %>
+</ul>

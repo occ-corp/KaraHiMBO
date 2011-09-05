@@ -1,0 +1,31 @@
+<h1>New actual</h1>
+
+<% form_for(@actual) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :value %><br />
+    <%= f.text_field :value %>
+  </p>
+  <p>
+    <%= f.label :year %><br />
+    <%= f.text_field :year %>
+  </p>
+  <p>
+    <%= f.label :month %><br />
+    <%= f.text_field :month %>
+  </p>
+  <p>
+    <%= f.label :item_id %><br />
+    <%= f.text_field :item_id %>
+  </p>
+  <p>
+    <%= f.label :belong_id %><br />
+    <%= f.text_field :belong_id %>
+  </p>
+  <p>
+    <%= f.submit I18n.t('submit.create') %>
+  </p>
+<% end %>
+
+<%= link_to I18n.t('link.back'), actuals_path %>

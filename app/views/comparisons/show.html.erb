@@ -1,0 +1,8 @@
+<p>
+  <b><%= Comparison.human_attribute_name(:name) %>:</b>
+  <%=h @comparison.name %>
+</p>
+
+
+<%= link_to t('link.edit'), edit_comparison_path(@comparison) %> |
+<%= link_to I18n.t('link.back'), comparisons_path %>

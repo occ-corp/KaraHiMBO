@@ -1,0 +1,66 @@
+<%= render :partial => "sigma_grid" %>
+
+<% form_tag(:action => "index") do %>
+  <table id="select_table">
+   <tr>
+     <td class="name"><%= t(:views_objective_select_division) %></td>
+     <td class="select">
+           <%= select_nested_set_tag(:division, Division, nil, @division.id) %>
+     </td>
+  </tr>
+  <tr>
+    <td class="name"><%= t(:views_objective_select_employee) %></td>
+    <td class="select">
+          <%= select_tag(:employee,
+                                     options_for_select(select_of_employees(@employees_in_division),
+										  @employee.id)) -%>
+		<%= observe_field(:division, :update => :employee, :with => 'value',
+						  :url => { :action => :employees_live_search }) %>
+    </td>
+  </tr>
+  <tr>
+    <td class="name"><%= t(:views_objective_select_belong) %></td>
+    <td class="select">
+          <%= select_tag(:belong, options_for_select(select_of_divisions_and_posts(@employee, @division), @belong.id)) -%>
+          <%= observe_field(:employee, :frequency => 0.5, :update => :belong,
+						  :with => <<EOS,
+'employee='+value+'&division='+document.getElementById('division').value
+EOS
+						  :url => { :action => :belong_live_search }) %>
+    </td>
+  </tr>
+  <tr>
+    <td class="name"><%= t(:views_objective_range) %></td>
+    <td class="select_date">
+        <%= t(:views_objective_fiscal_year) %>
+        <%= radio_button_tag(:extract_period, "1", @period_year) %>
+        <%= select_of_period(:period_year, @period_year) %>
+        <br />
+        <%= t(:views_objective_year_month) %>
+        <%= radio_button_tag(:extract_period, "2", !@period_year) %>
+        <%= select_of_years_range(@start_date, @end_date, "　#{t(:views_objective_range_separator)}　") %>
+      </td>
+  </tr>
+  </table>
+
+
+  <%= submit_tag(t(:views_objective_submit), {:id => 'employee_load'}) %>
+<% end %>
+
+<div id="print_rank">
+  <h2><%= @employee.full_name_with_belong(@belong) %></h2>
+  <% if @period_year %>
+    <%=h(t(:views_objective_year_rank, :period_year => @period_year)) %>
+  <% else %>
+    <%=h(t(:views_objective_range_rank), :range_from => @range.first.field_header, :range_to => @range.last.field_header) %>
+  <% end %>
+  <span id="rank"></span>
+</div>
+<%= button_to_function t(:views_objective_save), "save()", :id => "save_button" %>
+<%= button_to_function t(:views_objective_export), "move_export()", :id => "export_button" %>
+
+<div id="bigbox" style="margin:15px;display:!none;">
+  <%= t(:views_objective_rank) %>
+  <%= list_of_rank_table Objective::Rank::RANK_TABLE %>
+  <div id="grid" style="border:0px solid #cccccc;background-color:#f3f3f3;padding:5px;height:auto;width:600px;"></div>
+</div>

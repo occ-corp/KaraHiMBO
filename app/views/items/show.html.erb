@@ -1,0 +1,47 @@
+<p>
+  <b>Name:</b>
+  <%=h @item.name %>
+</p>
+
+<p>
+  <b><%= FirstCategory.human_name %></b>
+  <%=h @item.first_category_name %>
+</p>
+
+<p>
+  <b><%= SecondCategory.human_name %></b>
+  <%=h @item.second_category_name %>
+</p>
+
+<p>
+  <b><%= Item.human_attribute_name(:target_index) %></b>
+  <%=h @item.target_index %>
+</p>
+
+<p>
+  <b><%= Item.human_attribute_name(:person_year_index) %></b>
+  <% if @item.entire_index.nil? %>
+       ---
+  <% else %>
+       <%=h "#{@item.entire_index} #{@item.unit}/#{t(:views_items_form_year)}" %>
+  <% end %>
+</p>
+
+<p>
+  <b><%= Item.human_attribute_name(:person_year_index) %></b>
+  <%=h "#{@item.person_year_index} #{@item.unit}/#{t(:views_items_form_year)}" %>
+</p>
+
+<p>
+  <b><%= Item.human_attribute_name(:person_month_index) %></b>
+  <%=h "#{@item.person_month_index} #{@item.unit}/#{t(:views_items_form_month)}" %>
+</p>
+
+<p>
+  <b>Comparison:</b>
+  <%=h @item.comparison_id %>
+</p>
+
+<%= link_to t('link.edit'), edit_item_path(@item) %> |
+<%= link_to I18n.t('link.back'), {:controller => :objective, :action => :maintenance,
+	:id => @root_division} %>

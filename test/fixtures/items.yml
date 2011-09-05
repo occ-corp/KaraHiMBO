@@ -1,0 +1,300 @@
+data1:
+  id: 1
+  name: 50万以上の3ヶ月延滞の売掛物件を指数以下に抑える
+  second_category_id: 1
+  unit: 個
+  entire_index: 12
+  person_year_index: 2009
+  person_month_index: 11
+  comparison_id: 2
+  created_at: 2011-08-09 10:14:33
+  updated_at: 2011-08-09 10:14:33
+
+data2:
+  id: 2
+  name: 仕入れ価格が50万円を越える物件について、入金と支払いの逆転を指数以下に抑える
+  second_category_id: 2
+  unit: 個
+  entire_index: 12
+  person_year_index: 2009
+  person_month_index: 11
+  comparison_id: 2
+  created_at: 2011-08-09 10:14:33
+  updated_at: 2011-08-09 10:14:33
+
+data3:
+  id: 3
+  name: 月毎の予算対実績について、達成率を指数以上とする
+  second_category_id: 3
+  unit: 個
+  entire_index: 12
+  person_year_index: 2009
+  person_month_index: 11
+  comparison_id: 1
+  created_at: 2011-08-09 10:14:33
+  updated_at: 2011-08-09 10:14:33
+
+data4:
+  id: 4
+  name: 顧客の定期訪問の実施を行う(Aランク以上)
+  second_category_id: 4
+  unit: 個
+  entire_index: 12
+  person_year_index: 2009
+  person_month_index: 11
+  comparison_id: 1
+  created_at: 2011-08-09 10:14:33
+  updated_at: 2011-08-09 10:14:33
+
+data5:
+  id: 5
+  name: ハウジング、ホスティングサービスの販売を行う
+  second_category_id: 5
+  unit: 個
+  entire_index: 12
+  person_year_index: 2009
+  person_month_index: 11
+  comparison_id: 1
+  created_at: 2011-08-09 10:14:33
+  updated_at: 2011-08-09 10:14:33
+
+data6:
+  id: 6
+  name: DPSサービスの販売を行う
+  second_category_id: 5
+  unit: 個
+  entire_index: 12
+  person_year_index: 2009
+  person_month_index: 11
+  comparison_id: 1
+  created_at: 2011-08-09 10:14:33
+  updated_at: 2011-08-09 10:14:33
+
+data7:
+  id: 7
+  name: ASPサービスの販売を行う
+  second_category_id: 5
+  unit: 個
+  entire_index: 12
+  person_year_index: 2009
+  person_month_index: 11
+  comparison_id: 1
+  created_at: 2011-08-09 10:14:33
+  updated_at: 2011-08-09 10:14:33
+
+data8:
+  id: 8
+  name: 入出庫システムの販売
+  second_category_id: 6
+  unit: 個
+  entire_index: 12
+  person_year_index: 2009
+  person_month_index: 11
+  comparison_id: 1
+  created_at: 2011-08-09 10:14:33
+  updated_at: 2011-08-09 10:14:33
+
+data9:
+  id: 9
+  name: 入出庫システムIIの販売
+  second_category_id: 6
+  unit: 個
+  entire_index: 12
+  person_year_index: 2009
+  person_month_index: 11
+  comparison_id: 1
+  created_at: 2011-08-09 10:14:33
+  updated_at: 2011-08-09 10:14:33
+
+data10:
+  id: 10
+  name: 入出庫システムIIIの販売
+  second_category_id: 6
+  unit: 個
+  entire_index: 12
+  person_year_index: 2009
+  person_month_index: 11
+  comparison_id: 1
+  created_at: 2011-08-09 10:14:33
+  updated_at: 2011-08-09 10:14:33
+
+data11:
+  id: 11
+  name: 県外マーケットへの進出
+  second_category_id: 6
+  unit: 個
+  entire_index: 12
+  person_year_index: 2009
+  person_month_index: 11
+  comparison_id: 1
+  created_at: 2011-08-09 10:14:33
+  updated_at: 2011-08-09 10:14:33
+
+data12:
+  id: 12
+  name: スマートフォン系販売目標
+  second_category_id: 6
+  unit: 個
+  entire_index: 12
+  person_year_index: 2009
+  person_month_index: 11
+  comparison_id: 1
+  created_at: 2011-08-09 10:14:33
+  updated_at: 2011-08-09 10:14:33
+
+data13:
+  id: 13
+  name: 保守契約新規
+  second_category_id: 7
+  unit: 個
+  entire_index: 12
+  person_year_index: 2009
+  person_month_index: 11
+  comparison_id: 1
+  created_at: 2011-08-09 10:14:33
+  updated_at: 2011-08-09 10:14:33
+
+data14:
+  id: 14
+  name: 保守契約見直し
+  second_category_id: 7
+  unit: 個
+  entire_index: 12
+  person_year_index: 2009
+  person_month_index: 11
+  comparison_id: 1
+  created_at: 2011-08-09 10:14:33
+  updated_at: 2011-08-09 10:14:33
+
+data15:
+  id: 15
+  name: お客様環境調査
+  second_category_id: 7
+  unit: 個
+  entire_index: 12
+  person_year_index: 2009
+  person_month_index: 11
+  comparison_id: 1
+  created_at: 2011-08-09 10:14:33
+  updated_at: 2011-08-09 10:14:33
+
+data16:
+  id: 16
+  name: スケジュール入力
+  second_category_id: 8
+  unit: 個
+  entire_index: 12
+  person_year_index: 2009
+  person_month_index: 11
+  comparison_id: 1
+  created_at: 2011-08-09 10:14:33
+  updated_at: 2011-08-09 10:14:33
+
+data17:
+  id: 17
+  name: 日報入力
+  second_category_id: 8
+  unit: 個
+  entire_index: 12
+  person_year_index: 2009
+  person_month_index: 11
+  comparison_id: 1
+  created_at: 2011-08-09 10:14:33
+  updated_at: 2011-08-09 10:14:33
+
+data18:
+  id: 18
+  name: 案件登録(50万以上の物件の登録)
+  second_category_id: 8
+  unit: 個
+  entire_index: 12
+  person_year_index: 2009
+  person_month_index: 11
+  comparison_id: 1
+  created_at: 2011-08-09 10:14:33
+  updated_at: 2011-08-09 10:14:33
+
+data19:
+  id: 19
+  name: 案件メンテナンス
+  second_category_id: 8
+  unit: 個
+  entire_index: 12
+  person_year_index: 2009
+  person_month_index: 11
+  comparison_id: 1
+  created_at: 2011-08-09 10:14:33
+  updated_at: 2011-08-09 10:14:33
+
+data20:
+  id: 20
+  name: 支援業務による受注
+  second_category_id: 9
+  unit: 個
+  entire_index: 12
+  person_year_index: 2009
+  person_month_index: 11
+  comparison_id: 1
+  created_at: 2011-08-09 10:14:33
+  updated_at: 2011-08-09 10:14:33
+
+data21:
+  id: 21
+  name: 新ビジネスモデルの企画
+  second_category_id: 9
+  unit: 個
+  entire_index: 12
+  person_year_index: 2009
+  person_month_index: 11
+  comparison_id: 1
+  created_at: 2011-08-09 10:14:33
+  updated_at: 2011-08-09 10:14:33
+
+data22:
+  id: 22
+  name: 業務効率化への取り組み
+  second_category_id: 10
+  unit: 個
+  entire_index: 12
+  person_year_index: 2009
+  person_month_index: 11
+  comparison_id: 1
+  created_at: 2011-08-09 10:14:33
+  updated_at: 2011-08-09 10:14:33
+
+data23:
+  id: 23
+  name: 販売企画・支援グループ主催の勉強会
+  second_category_id: 11
+  unit: 個
+  entire_index: 12
+  person_year_index: 2009
+  person_month_index: 11
+  comparison_id: 1
+  created_at: 2011-08-09 10:14:33
+  updated_at: 2011-08-09 10:14:33
+
+data24:
+  id: 24
+  name: 外部セミナーの受講
+  second_category_id: 11
+  unit: 個
+  entire_index: 12
+  person_year_index: 2009
+  person_month_index: 11
+  comparison_id: 1
+  created_at: 2011-08-09 10:14:33
+  updated_at: 2011-08-09 10:14:33
+
+data25:
+  id: 25
+  name: 製品説明会や業界セミナーへの参加
+  second_category_id: 11
+  unit: 個
+  entire_index: 12
+  person_year_index: 2009
+  person_month_index: 11
+  comparison_id: 1
+  created_at: 2011-08-09 10:14:33
+  updated_at: 2011-08-09 10:14:33
+

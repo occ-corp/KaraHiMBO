@@ -1,0 +1,177 @@
+<% javascript_tag do %>
+
+var dsOption = {
+  fields: [
+    {name: 'first_category_name'},
+    {name: 'second_category_name'},
+    {name: 'item'},
+    {name: 'unit'},
+    {name: 'comparison_id'},
+    {name: 'target_index'},
+    {name: 'entire_index'},
+    {name: 'person_year_index'},
+    {name: 'person_month_index'},
+    <% @range.each do |m| %>
+	  {name : '<%= m.actual_field_index %>', type : 'float'},
+	  {name : '<%= m.rate_field_index %>',
+	     initValue : function(record) {
+           if (record['first_category_name'] == null) {
+             return record['<%= m.rate_field_index %>'];
+           } else {
+             if (record['<%= m.rate_field_index %>'] == null) {
+                return "0";
+             } else {
+                return record['<%= m.rate_field_index %>'];
+             }
+           }
+        }
+      },
+    <% end %>
+    {name: 'total'},
+    {name: 'total_rate',
+	     initValue : function(record) {
+           if (record['first_category_name'] == null) {
+             return record['total_rate'];
+           } else {
+             if (record['total_rate'] == null) {
+                return "0";
+             } else {
+                return record['total_rate'];
+             }
+           }
+        }
+     },
+     {name : 'dummy'}
+  ],
+  recordType: 'object'
+};
+
+var colsOption = [
+  {id: 'first_category_name', header: '<%= Objective::COLUMN_HEADERS[:first_category_name] %>', grouped : true,
+   width: "110",  headAlign : 'center', sortable : false, frozen : true},
+  {id: 'second_category_name', header: '<%= Objective::COLUMN_HEADERS[:second_category_name] %>', grouped: true,
+   width: 150, headAlign : 'center', sortable : false, frozen : true},
+  {id: 'item', header: '<%= Objective::COLUMN_HEADERS[:item] %>', headAlign : 'center', sortable : false,
+   frozen : true},
+  {id: 'unit', hidden : true},
+  {id: 'comparison_id', hidden : true},
+  {id: 'target_index', header: '<%= Objective::COLUMN_HEADERS[:target_index] %>', headAlign : 'center', sortable : false, width : 60,
+   align : 'center', frozen : true},
+  {id: 'entire_index', header: '<%= Objective::COLUMN_HEADERS[:entire_index] %>', headAlign : 'center', sortable : false, frozen : true,
+   align : 'right', renderer : function(value ,record, colObj, grid, colNo, rowNo) {
+                if (value == null || record['first_category_name'] == null ) {
+                  return '-';
+                } else {
+                  return value + " " + record['unit'] + "/<%= t(:views_objective_sigma_grid_year) %>";
+                }
+              }
+  },
+  {id: 'person_year_index', header: '<%= Objective::COLUMN_HEADERS[:person_year_index] %>', headAlign : 'center', sortable : false, frozen : true,
+   align : 'right', renderer : function(value ,record, colObj, grid, colNo, rowNo) {
+                if (record['first_category_name'] != null) {
+                  return value + " " + record['unit'] + "/<%= t(:views_objective_sigma_grid_year) %>";
+                }
+              }
+  },
+  {id: 'person_month_index', header: '<%= Objective::COLUMN_HEADERS[:person_month_index] %>', headAlign : 'center', sortable : false, frozen : true,
+   align : 'right', renderer : function(value ,record, colObj, grid, colNo, rowNo) {
+                if (record['first_category_name'] != null) {
+                  return value + " " + record['unit'] + "/<%= t(:views_objective_sigma_grid_year) %>";
+                }
+              }
+   },
+  <% common_option = "width: 60, sortable : false, align: 'right'" %>
+  <% editor_option = common_option.dup %>
+  <% if current_user.employee == @employee %>
+	<% editor_option << ", editor : {type : 'text'}" %>
+  <% end %>
+  <% @range.each do |m| %>
+    {id: '<%= m.actual_field_index %>', header: '<%= m.field_header %>', <%= editor_option %> },
+    {id: '<%= m.rate_field_index %>', header: '<%= t(:views_objective_sigma_grid_achievement_rate) %>', <%= common_option %>,
+     renderer : function(value ,record, colObj, grid, colNo, rowNo) {
+                  if (record['first_category_name'] == null) {
+                    return '<span class=\"actual_rank\">' + value + '</span>';
+                  } else {
+                    return value + '%';
+                  }
+                }
+    },
+  <% end %>
+  <% if @range.is_period? %>
+  {id: 'total', header: '<%= t(:views_objective_sigma_grid_fiscal_result) %>', <%= common_option %>},
+  {id: 'total_rate', header: '<%= t(:views_objective_sigma_grid_fiscal_achievement_rate) %>',  <%= common_option %>,
+     renderer : function(value ,record, colObj, grid, colNo, rowNo) {
+                  if (record['first_category_name'] == null) {
+                    return '<span class=\"actual_rank\">' + value + '</span>';
+                  } else {
+                    return value + '%';
+                  }
+                }
+  }
+  <% else %>
+  {id : 'dummy', hidden : true }
+  <% end %>
+];
+
+var gridOption = {
+    id : 'grid_projects',
+    loadURL   : '<%= url_for(:action => :load) %>',
+    saveURL   : '<%= url_for(:action => :save) %>',
+    exportURL : '<%= url_for(:action => :export) %>',
+    submitUpdatedFields : true,
+    width: "100%",
+    height: "620",
+//  height: "100%", // IE だと使えない
+    replaceContainer : true,
+    autoEditNext: true,
+    container : 'grid',
+    sortable: false,
+    dataset : dsOption,
+    columns : colsOption,
+    toolbarPosition: null,
+
+    // 区分がないレコードは編集を行わない
+    beforeEdit : function() {
+      if (this.activeRecord['first_category_name'] == null) {
+        return false;
+      } else {
+        return true;
+      }
+    },
+
+    onComplete : function(grid) {
+      rank_record = grid.dataset.data.last();
+      if (rank_record) {
+        document.getElementById("rank").innerHTML = rank_record['total_rate'];
+      }
+      //document.getElementByID("rank").innerText = total_rank;
+    },
+
+    parameters : {
+      belong_id : <%= @belong ? @belong.id : "1" %>,
+      range : {
+        start:{year:<%= @range.first.year %>,month:<%= @range.first.month %>},
+        end:{year:<%= @range.last.year %>,month:<%= @range.last.month %>}
+      }
+    }
+};
+
+var mygrid = new Sigma.Grid(gridOption);
+Sigma.Util.onLoad(Sigma.Grid.render(mygrid));
+
+function save() {
+  mygrid.save();
+}
+
+function move_export() {
+  var link = '<%= url_for :controller => "objective/export" %>';
+
+  if (mygrid.getUpdatedRecords().length != 0) {
+    alert('<%= t(:views_objective_sigma_grid_save_content) %>');
+    return false;
+  } else {
+    document.location = link;
+  }
+}
+
+<% end %>

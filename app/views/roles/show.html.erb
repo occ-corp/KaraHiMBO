@@ -1,0 +1,13 @@
+<p>
+  <b><%= Role.human_attribute_name(:name) %>:</b>
+  <%=h @role.name %>
+</p>
+
+<p>
+  <b><%= Role.human_attribute_name(:permission) %>:</b>
+  <%=h @role.permission %>
+</p>
+
+
+<%= link_to t('link.edit'), edit_role_path(@role) %> |
+<%= link_to I18n.t('link.back'), roles_path %>

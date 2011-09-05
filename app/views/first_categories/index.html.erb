@@ -1,0 +1,21 @@
+<%= render :partial => '/shared/settings_head' %>
+<h1><%=t 'heading.listing' %><%=t 'first_categories' %></h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+  </tr>
+
+<% @first_categories.each do |first_category| %>
+  <tr>
+    <td><%=h first_category.name %></td>
+    <td><%= link_to t('link.show'), first_category %></td>
+    <td><%= link_to t('link.edit'), edit_first_category_path(first_category) %></td>
+    <td><%= link_to t('link.destroy'), first_category, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to "#{t('link.new')} #{t('first_categories')}", new_first_category_path %>

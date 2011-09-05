@@ -1,0 +1,77 @@
+data1:
+  id: 1
+  name: 3ヶ月以上の売掛低減
+  first_category_id: 1
+  created_at: 2011-08-09 10:14:33
+  updated_at: 2011-08-09 10:14:33
+
+data2:
+  id: 2
+  name: 入金・支払いの逆転禁止
+  first_category_id: 1
+  created_at: 2011-08-09 10:14:33
+  updated_at: 2011-08-09 10:14:33
+
+data3:
+  id: 3
+  name: 対予算実績管理
+  first_category_id: 1
+  created_at: 2011-08-09 10:14:33
+  updated_at: 2011-08-09 10:14:33
+
+data4:
+  id: 4
+  name: 定期訪問の実施
+  first_category_id: 2
+  created_at: 2011-08-09 10:14:33
+  updated_at: 2011-08-09 10:14:33
+
+data5:
+  id: 5
+  name: データセンターソリューションの展開
+  first_category_id: 3
+  created_at: 2011-08-09 10:14:33
+  updated_at: 2011-08-09 10:14:33
+
+data6:
+  id: 6
+  name: 入出庫システムシリーズの拡版
+  first_category_id: 3
+  created_at: 2011-08-09 10:14:33
+  updated_at: 2011-08-09 10:14:33
+
+data7:
+  id: 7
+  name: ストックビジネスの強化
+  first_category_id: 3
+  created_at: 2011-08-09 10:14:33
+  updated_at: 2011-08-09 10:14:33
+
+data8:
+  id: 8
+  name: CMSの活用
+  first_category_id: 3
+  created_at: 2011-08-09 10:14:33
+  updated_at: 2011-08-09 10:14:33
+
+data9:
+  id: 9
+  name: 販売促進活動
+  first_category_id: 3
+  created_at: 2011-08-09 10:14:33
+  updated_at: 2011-08-09 10:14:33
+
+data10:
+  id: 10
+  name: 業務改善
+  first_category_id: 3
+  created_at: 2011-08-09 10:14:33
+  updated_at: 2011-08-09 10:14:33
+
+data11:
+  id: 11
+  name: 商品や業務知識の習得
+  first_category_id: 4
+  created_at: 2011-08-09 10:14:33
+  updated_at: 2011-08-09 10:14:33
+

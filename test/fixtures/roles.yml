@@ -1,0 +1,14 @@
+data1:
+  id: 1
+  name: Admin
+  permission: true
+  created_at: 2009-11-17 06:00:29
+  updated_at: 2009-11-17 06:00:29
+
+data2:
+  id: 2
+  name: User
+  permission: false
+  created_at: 2009-11-17 06:00:29
+  updated_at: 2009-11-17 06:00:29
+

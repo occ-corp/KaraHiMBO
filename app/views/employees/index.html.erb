@@ -1,0 +1,25 @@
+<%= render :partial => '/shared/settings_head' %>
+<h1><%=t 'heading.listing' %><%=t 'employees' %></h1>
+
+<table>
+  <tr>
+    <th><%= Employee.human_attribute_name(:code) %></th>
+    <th><%= Employee.human_attribute_name(:name) %></th>
+    <th><%= Employee.human_attribute_name(:role_id) %></th>
+  </tr>
+
+<% @employees.each do |employee| %>
+  <tr>
+    <td><%=h employee.code %></td>
+    <td><%=h employee.name %></td>
+    <td><%=h employee.role_id %></td>
+    <td><%= link_to t('link.show'), employee %></td>
+    <td><%= link_to t('link.edit'), edit_employee_path(employee) %></td>
+    <td><%= link_to t('link.destroy'), employee, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to "#{t('link.new')} #{t('employees')}", new_employee_path %>

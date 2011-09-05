@@ -1,0 +1,16 @@
+<h1><%=t 'heading.editing' %> <%=t 'comparisons' %></h1>
+
+<% form_for(@comparison) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.submit I18n.t('submit.update') %>
+  </p>
+<% end %>
+
+<%= link_to t('link.show'), @comparison %> |
+<%= link_to I18n.t('link.back'), comparisons_path %>

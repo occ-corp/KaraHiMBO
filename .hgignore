@@ -1,0 +1,9 @@
+syntax: glob
+log
+config/database.yml
+db/schema.rb
+db/*.sqlite3
+coverage
+TAGS
+*~
+doc/*

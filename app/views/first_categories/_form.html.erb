@@ -1,0 +1,15 @@
+<% form_for(@first_category) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+
+  <p>
+    <%= f.hidden_field :division_id %>
+  </p>
+  <p>
+    <%= f.submit value %>
+  </p>
+<% end %>

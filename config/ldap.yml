@@ -1,0 +1,15 @@
+# development:
+#   host: 10.0.1.27
+#   base: dc=example,dc=co,dc=jp
+#   password: secret
+
+# test:
+#   host: 127.0.0.1
+#   base: dc=test,dc=local,dc=net
+#   bind_dn: cn=admin,dc=local,dc=net
+#   password: secret
+
+# production:
+#   host: 10.0.1.27
+#   base: dc=example,dc=co,dc=jp
+#   password: secret

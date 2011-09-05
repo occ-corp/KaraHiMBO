@@ -1,0 +1,70 @@
+<% javascript_tag do %>
+//function replace_unit() {
+  
+//}
+<% end %>
+
+<% form_for(@item) do |f| %>
+  <%= f.error_messages %>
+
+  <%= select_nested_set_tag(:division_id, Division.find(@root_division), nil, @selected_divisions, {}, {:multiple => true}) %>
+  <%= hidden_field_tag(:root_division, @root_division) %>
+
+  <table>
+      <tr>
+      <td><%= SecondCategory.human_name %></td>
+        <td>
+              <%=h SecondCategory.find(@item.second_category_id).name %>
+              <%= f.hidden_field :second_category_id %>
+        </td>
+      </tr>
+      <tr>
+        <td><%= Item.human_name %></td>
+        <td><%= f.text_field :name %></td>
+    </tr>
+      <tr>
+      <td><%= Item.human_attribute_name(:unit) %></td>
+      <td>
+              <%= f.text_field(:unit,
+                                               :onchange =>
+						 remote_function(:url => {:action => :replace_unit},
+										 :with => "'value=' + this.value")) %>
+	  </td>
+      </tr>
+
+      <tr>
+      <td><%= Item.human_attribute_name(:target_index) %></td>
+      <td><%= f.text_field :target_index %></td>
+      </tr>
+      <tr>
+      <td><%= Item.human_attribute_name(:entire_index) %></td>
+      <td>
+              <%= f.text_field :entire_index %>
+              <span class="unit_name"><%=h @item.unit %></span>/<%= t(:views_items_form_year) %>
+        </td>
+      </tr>
+      <tr>
+        <td><%= Item.human_attribute_name(:person_year_index) %></td>
+      <td>
+              <%= f.text_field :person_year_index %>
+              <span class="unit_name"><%=h @item.unit %></span>/<%= t(:views_items_form_year) %>
+        </td>
+      </tr>
+      <tr>
+      <td><%= Item.human_attribute_name(:person_month_index) %></td>
+      <td>
+              <%= f.text_field :person_month_index %>
+              <span class="unit_name"><%=h @item.unit %></span>/<%= t(:views_items_form_month) %>
+        </td>
+      </tr>
+      <tr>
+	  <td><%= f.label :comparison_id %></td>
+	  <td>
+		<%= f.select :comparison_id, Comparison.all.collect {|c| [c.name, c.id] } %></td>
+	</tr>
+  </table>
+
+  <p>
+    <%= f.submit submit %>
+  </p>
+<% end %>

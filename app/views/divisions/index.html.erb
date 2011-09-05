@@ -1,0 +1,29 @@
+<%= render :partial => '/shared/settings_head' %>
+<h1><%=t 'heading.listing' %><%=t 'divisions' %></h1>
+
+<table>
+  <tr>
+    <th><%= Division.human_attribute_name(:code) %></th>
+    <th><%= Division.human_attribute_name(:name) %></th>
+    <th><%= Division.human_attribute_name(:parent_id) %></th>
+    <th><%= Division.human_attribute_name(:lft) %></th>
+    <th><%= Division.human_attribute_name(:rgt) %></th>
+  </tr>
+
+<% @divisions.each do |division| %>
+  <tr>
+    <td><%=h division.code %></td>
+    <td><%=h division.name %></td>
+    <td><%=h division.parent_id %></td>
+    <td><%=h division.lft %></td>
+    <td><%=h division.rgt %></td>
+    <td><%= link_to t('link.show'), division %></td>
+    <td><%= link_to t('link.edit'), edit_division_path(division) %></td>
+    <td><%= link_to t('link.destroy'), division, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to "#{t('link.new')} #{t('divisions')}", new_division_path %>

@@ -1,0 +1,35 @@
+<%= render :partial => '/shared/settings_head' %>
+<h1><%=t 'heading.listing' %><%=t 'items' %></h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Second category</th>
+    <th>Unit</th>
+    <th>Target index</th>
+    <th>Entire index</th>
+    <th>Person year index</th>
+    <th>Person month index</th>
+    <th>Comparison</th>
+  </tr>
+
+<% @items.each do |item| %>
+  <tr>
+    <td><%=h item.name %></td>
+    <td><%=h item.second_category_id %></td>
+    <td><%=h item.unit %></td>
+    <td><%=h item.target_index %></td>
+    <td><%=h item.entire_index %></td>
+    <td><%=h item.person_year_index %></td>
+    <td><%=h item.person_month_index %></td>
+    <td><%=h item.comparison_id %></td>
+    <td><%= link_to t('link.show'), item %></td>
+    <td><%= link_to t('link.edit'), edit_item_path(item) %></td>
+    <td><%= link_to t('link.destroy'), item, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to "#{t('link.new')} #{t('items')}", new_item_path %>

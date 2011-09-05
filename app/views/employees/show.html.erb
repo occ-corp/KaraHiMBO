@@ -1,0 +1,18 @@
+<p>
+  <b><%= Employee.human_attribute_name(:code) %>:</b>
+  <%=h @employee.code %>
+</p>
+
+<p>
+  <b><%= Employee.human_attribute_name(:name) %>:</b>
+  <%=h @employee.name %>
+</p>
+
+<p>
+  <b><%= Employee.human_attribute_name(:role_id) %>:</b>
+  <%=h @employee.role_id %>
+</p>
+
+
+<%= link_to t('link.edit'), edit_employee_path(@employee) %> |
+<%= link_to I18n.t('link.back'), employees_path %>

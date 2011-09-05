@@ -1,0 +1,74 @@
+data1:
+  id: 1
+  name: 正しい挨拶
+  second_category_id: 1
+  unit: 回
+  entire_index: 10000.0
+  person_year_index: 3600.0
+  person_month_index: 300.0
+  comparison_id: 1
+  target_index: 回数
+
+data2:
+  id: 2
+  name: 3階廊下
+  second_category_id: 2
+  unit: 日
+  entire_index: 1000.0
+  person_year_index: 240.0
+  person_month_index: 20.0
+  comparison_id: 1
+  target_index: 日数
+
+data3:
+  id: 3
+  name: 第2休憩所で休憩
+  second_category_id: 3
+  unit: 時間
+  entire_index: 500.0
+  person_year_index: 120.0
+  person_month_index: 10.0
+  comparison_id: 1
+  target_index: しっかり休む
+
+data4:
+  id: 4
+  name: 休憩所で休憩
+  second_category_id: 3
+  unit: 時間
+  entire_index: 500.0
+  person_year_index: 120.0
+  person_month_index: 10.0
+  comparison_id: 1
+  target_index: しっかり休む
+
+data5:
+  id: 5
+  name: 社員IDカードの忘れ数低減
+  second_category_id: 4
+  unit: 枚
+  person_year_index: 240.0
+  person_month_index: 20.0
+  comparison_id: 2
+  target_index: 枚
+
+data6:
+  id: 6
+  name: 残業時間の低減
+  second_category_id: 5
+  unit: 時間
+  person_year_index: 400.0
+  person_month_index: 40.0
+  comparison_id: 2
+  target_index: 時間
+
+data7:
+  id: 7
+  name: 4階廊下
+  second_category_id: 2
+  unit: 日
+  person_year_index: 240.0
+  person_month_index: 20.0
+  comparison_id: 1
+  target_index: 日数
+

@@ -1,0 +1,58 @@
+data1:
+  id: 1
+  code: 99999
+  name: システム開発者
+  lft: 1
+  rgt: 2
+  created_at: 2009-11-24 12:46:29
+  updated_at: 2009-11-24 12:46:29
+
+data2:
+  id: 2
+  code: 7000
+  name: ビジネスソリューション部門
+  lft: 3
+  rgt: 12
+  created_at: 2009-11-24 12:46:29
+  updated_at: 2009-11-24 12:46:29
+
+data3:
+  id: 3
+  code: 7100
+  name: 産業部
+  parent_id: 2
+  lft: 4
+  rgt: 9
+  created_at: 2009-11-24 12:46:29
+  updated_at: 2009-11-24 12:46:29
+
+data4:
+  id: 4
+  code: 7100
+  name: 販売チーム
+  parent_id: 3
+  lft: 5
+  rgt: 6
+  created_at: 2009-11-24 12:46:29
+  updated_at: 2009-11-24 12:46:29
+
+data5:
+  id: 5
+  code: 7100
+  name: 企画・支援チーム
+  parent_id: 3
+  lft: 7
+  rgt: 8
+  created_at: 2009-11-24 12:46:29
+  updated_at: 2009-11-24 12:46:29
+
+data6:
+  id: 6
+  code: 7300
+  name: 福祉部
+  parent_id: 2
+  lft: 10
+  rgt: 11
+  created_at: 2009-11-24 12:46:29
+  updated_at: 2009-11-24 12:46:29
+
