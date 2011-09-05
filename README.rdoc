@@ -1,6 +1,6 @@
-== MBO on Rails
+== KaraHi MBO
 
-MBO on Rails is a data sheet management system for MBO.
+KaraHi MBO is a data entry system for MBO.
 
 Management by Objectives (MBO) is a process of defining objectives
 within an organization so that management and employees agree to
@@ -70,4 +70,4 @@ see LICENSE.txt for more information.
 
 == CONTACT
 
-OCC Corporation. 
+OCC Corporation. http://www.occ.co.jp
