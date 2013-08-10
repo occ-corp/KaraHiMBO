@@ -2,6 +2,7 @@ source "http://rubygems.org"
 
 gem 'rdoc'
 gem 'rdoc-data'
+gem 'rake', '~> 0.8.7'
 gem 'rails', '= 2.3.12'
 gem 'postgres-pr', '= 0.6.3'
 gem 'activeldap', '= 1.2.4'
