@@ -21,6 +21,7 @@ GEM
       fast_gettext
     json (1.7.6)
     locale (2.0.5)
+    net-ldap (0.3.1)
     postgres-pr (0.6.3)
     rack (1.1.6)
     rails (2.3.12)
@@ -48,6 +49,7 @@ PLATFORMS
 
 DEPENDENCIES
   activeldap (= 1.2.4)
+  net-ldap
   postgres-pr (= 0.6.3)
   rails (= 2.3.12)
   rdoc

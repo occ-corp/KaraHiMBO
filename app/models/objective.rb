@@ -235,7 +235,9 @@ SQL
                           :joins => :divisions_items,
                           :conditions => {
                             :divisions_items => { :division_id => ids }
-                          })
+                          },
+                          :order => "first_category_name, second_category_name"
+                          )
 end
 
 #

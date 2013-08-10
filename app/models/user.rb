@@ -37,7 +37,7 @@ class User < ActiveRecord::Base
   def self.authenticate(login, password)
     begin
 
-      method = 'local'
+      method = 'ldap'
 
       case method
       when 'ldap' # production
@@ -55,8 +55,12 @@ class User < ActiveRecord::Base
         return nil if login.blank? || password.blank?
         u = find_by_login(login.downcase) # need to get the salt
       end
-    rescue ActiveLdap::AuthenticationError,ActiveLdap::LdapError::UnwillingToPerform
-      # FIXME 適切な返し値があるはず
+    rescue ActiveLdap::AuthenticationError
+      # LDAP 認証に失敗したらローカル認証('admin 専用')
+      return nil if login.blank? || password.blank?
+      u = find_by_login(login.downcase) # need to get the salt
+      return u && u.authenticated?(password) ? u : nil
+    rescue ActiveLdap::LdapError::UnwillingToPerform
       nil
     rescue ActiveLdap::ConnectionError
       raise ArgumentError.new(t(:user_could_not_connect_ldap))
