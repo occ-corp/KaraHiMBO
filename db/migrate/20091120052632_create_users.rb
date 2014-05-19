@@ -16,9 +16,10 @@ class CreateUsers < ActiveRecord::Migration
     end
     add_index :users, :login, :unique => true
 
+    # P@ssw0rd
     ActiveRecord::Base.connection.insert <<SQL
 INSERT INTO #{User.table_name} (login, crypted_password, salt, email)
-VALUES ('admin', '7ceaff8197e89dcf2f913a4a1a537f2f4bc8daed', '1103f273f63c27e4ab5d58148abad3115962d17d', 'admin@example.com')
+VALUES ('admin', '430efd4726589ecc8791bde28fd4364eb316460e', 'c0050c4ebe95f04d33ef9b617abc4bf44a3876a4', 'admin@example.com')
 SQL
   end
 

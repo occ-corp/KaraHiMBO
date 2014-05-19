@@ -10,50 +10,31 @@ for more details.
 
 == REQUIREMENTS
 
-This system will work fine in Debian GNU/Linux 6.0, and on
-Ruby on Rails 2.3.12.
-
-MBO on Rails depends on following packages,
-
+* Debian GNU/Linux 6.0
+* Ruby on Rails 2.3.12
 * Ruby 1.8.7
-* RubyGems 1.8.7
 * PostgreSQL 8.4
-
-and following gem packages.
-
-* rails (2.3.12)
-* postgres-pr (0.6.3)
-* activeldap (1.2.4)
-
-Followings are optional.
-
-* rspec (1.3.2)
-* rspec-rails (1.3.4)
 
 == INSTALLATION
 
-Install dependent gem packages.
+Install rubygems.
 
-  gem install rdoc
-  gem install rails -v=2.3.12
-  gem install postgres-pr
-  gem install rspec -v=1.3.2
-  gem install rspec-rails -v=1.3.4
-  gem install activeldap -v=1.2.4
+  $ bundle install --path vendor/bundle
 
 Initialize the database.
 
-  cp config/database.yml.example config/database.yml
-  rake db:create:all
-  rake db:migrate
+  $ cp config/database.yml.example config/database.yml
+  $ vi config/database.yml
+  $ bundle exec rake db:create:all
+  $ bundle exec rake db:migrate
 
 Load fixtures into the database.
 
-  rake db:fixtures:load
+  $ bundle exec rake db:fixtures:load
 
 Test the installation by running WEBrick web server.
 
-  ruby script/server
+  $ bundle exec ruby script/server
 
 Open your browser with http://localhost:3000.
 You will see the application welcome page.
