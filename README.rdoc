@@ -23,9 +23,7 @@ Install rubygems.
 
 Initialize the database.
 
-  $ cp config/database.yml.example config/database.yml
   $ vi config/database.yml
-  $ bundle exec rake db:create:all
   $ bundle exec rake db:migrate
 
 Load fixtures into the database.
