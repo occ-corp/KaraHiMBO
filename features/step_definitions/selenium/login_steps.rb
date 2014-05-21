@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 Given /^"(.*)"でログインしている$/ do |name|
   current_user = Employee.find_by_name(name).user
-  visit new_session_path
+  visit login_path
   fill_in("login", :with => current_user.login)
   fill_in("password", :with => "tteesstt")
   click_button("Log in")

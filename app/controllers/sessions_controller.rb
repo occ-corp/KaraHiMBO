@@ -19,11 +19,6 @@ class SessionsController < ApplicationController
       self.current_user = user
       new_cookie_flag = (params[:remember_me] == "1")
       handle_remember_cookie! new_cookie_flag
-      # TODO flash[:error] が消えない謎
-      # 本来は必要ないが、前回エラーの後にログイン成功した時、
-      # flash[:error] が残っている。
-      flash.discard
-      #redirect_back_or_default(:controller => :objective)
       redirect_back_or_default(root_path)
     else
       note_failed_signin
@@ -42,7 +37,7 @@ class SessionsController < ApplicationController
 protected
   # Track failed login attempts
   def note_failed_signin
-    flash[:error] = t(:sessions_controller_not_loggedin)
+    flash.now[:error] = t(:sessions_controller_not_loggedin)
     logger.warn "Failed login for '#{params[:login]}' from #{request.remote_ip} at #{Time.now.utc}"
   end
 end

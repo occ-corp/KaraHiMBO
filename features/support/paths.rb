@@ -16,7 +16,7 @@ module NavigationHelpers
     when /the new users page/
       new_users_path
     when /ログイン/
-      new_session_path
+      login_path
     when /トップ/
       root_path
     when /メンテナンス画面/
