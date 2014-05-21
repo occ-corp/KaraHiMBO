@@ -42,7 +42,7 @@ You will see the application welcome page.
 Use default administrator account to log in.
 
 * login:admin
-* password:admin
+* password:P@ssw0rd
 
 == LICENSE
 
