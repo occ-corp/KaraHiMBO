@@ -1,4 +1,3 @@
-# -*- coding: undecided -*-
 require File.dirname(__FILE__) + '/../spec_helper'
 
 # Be sure to include AuthenticatedTestHelper in spec/spec_helper.rb instead
@@ -132,8 +131,8 @@ describe SessionsController do
     it "should route session_path() correctly" do
       session_path().should == "/session"
     end
-    it "should route new_session_path() correctly" do
-      new_session_path().should == "/session/new"
+    it "should route login_path() correctly" do
+      login_path().should == "/session/new"
     end
   end
   
