@@ -21,8 +21,6 @@ ActionController::Routing::Routes.draw do |map|
 
   map.resources :divisions
 
-  map.resources :divisions_items
-
   map.resources :comparisons
 
   map.resources :items
