@@ -2,16 +2,8 @@ require 'spec_helper'
 
 describe SecondCategoriesController do
   describe "routing" do
-    it "recognizes and generates #index" do
-      { :get => "/second_categories" }.should route_to(:controller => "second_categories", :action => "index")
-    end
-
     it "recognizes and generates #new" do
       { :get => "/second_categories/new" }.should route_to(:controller => "second_categories", :action => "new")
-    end
-
-    it "recognizes and generates #show" do
-      { :get => "/second_categories/1" }.should route_to(:controller => "second_categories", :action => "show", :id => "1")
     end
 
     it "recognizes and generates #edit" do
