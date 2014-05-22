@@ -2,16 +2,8 @@ require 'spec_helper'
 
 describe ItemsController do
   describe "routing" do
-    it "recognizes and generates #index" do
-      { :get => "/items" }.should route_to(:controller => "items", :action => "index")
-    end
-
     it "recognizes and generates #new" do
       { :get => "/items/new" }.should route_to(:controller => "items", :action => "new")
-    end
-
-    it "recognizes and generates #show" do
-      { :get => "/items/1" }.should route_to(:controller => "items", :action => "show", :id => "1")
     end
 
     it "recognizes and generates #edit" do
