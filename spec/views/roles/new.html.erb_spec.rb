@@ -1,8 +1,6 @@
 require 'spec_helper'
 
 describe "/roles/new.html.erb" do
-  include RolesHelper
-
   before(:each) do
     assigns[:role] = stub_model(Role,
       :new_record? => true,

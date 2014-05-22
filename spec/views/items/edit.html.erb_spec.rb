@@ -1,8 +1,6 @@
 require 'spec_helper'
 
 describe "/items/edit.html.erb" do
-  include ItemsHelper
-
   before(:each) do
     assigns[:item] = @item = stub_model(Item,
       :new_record? => false,

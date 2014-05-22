@@ -1,7 +1,6 @@
 require 'spec_helper'
 
 describe "/divisions/show.html.erb" do
-  include DivisionsHelper
   before(:each) do
     assigns[:division] = @division = stub_model(Division,
       :code => "value for code",

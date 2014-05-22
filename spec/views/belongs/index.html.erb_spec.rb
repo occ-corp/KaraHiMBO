@@ -1,8 +1,6 @@
 require 'spec_helper'
 
 describe "/belongs/index.html.erb" do
-  include BelongsHelper
-
   before(:each) do
     assigns[:belongs] = [
       stub_model(Belong,

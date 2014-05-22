@@ -1,8 +1,6 @@
 require 'spec_helper'
 
 describe "/divisions/index.html.erb" do
-  include DivisionsHelper
-
   before(:each) do
     assigns[:divisions] = [
       stub_model(Division,

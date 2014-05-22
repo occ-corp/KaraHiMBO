@@ -1,8 +1,6 @@
 require 'spec_helper'
 
 describe "/posts/edit.html.erb" do
-  include PostsHelper
-
   before(:each) do
     assigns[:post] = @post = stub_model(Post,
       :new_record? => false,

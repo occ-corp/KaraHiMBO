@@ -1,8 +1,6 @@
 require 'spec_helper'
 
 describe "/comparisons/index.html.erb" do
-  include ComparisonsHelper
-
   before(:each) do
     assigns[:comparisons] = [
       stub_model(Comparison,
