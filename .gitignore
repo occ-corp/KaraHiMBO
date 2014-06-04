@@ -5,7 +5,6 @@ TAGS
 tags
 db/schema.rb
 *.csv
-config/ldap.yml
 config/app_config.yml
 *.sql
 olds/*
