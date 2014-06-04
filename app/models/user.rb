@@ -63,9 +63,9 @@ class User < ActiveRecord::Base
     rescue ActiveLdap::LdapError::UnwillingToPerform
       nil
     rescue ActiveLdap::ConnectionError
-      raise ArgumentError.new(t(:user_could_not_connect_ldap))
+      raise ArgumentError.new(I18n.t(:user_could_not_connect_ldap))
     rescue NoMethodError
-      raise ArgumentError.new(t(:user_no_authentication_method))
+      raise ArgumentError.new(I18n.t(:user_no_authentication_method))
     end
   end
 
