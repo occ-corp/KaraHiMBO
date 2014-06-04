@@ -109,9 +109,7 @@ describe User do
   end
 
   describe 'allows legitimate names:' do
-    ['Andre The Giant (7\'4", 520 lb.) -- has a posse',
-     '', '1234567890_234567890_234567890_234567890_234567890_234567890_234567890_234567890_234567890_234567890',
-    ].each do |name_str|
+    ['Andre The Giant (7\'4", 520 lb.) -- has a posse', '', 'a * 100'].each do |name_str|
       it "'#{name_str}'" do
         lambda do
           u = create_user(:name => name_str)
@@ -121,9 +119,7 @@ describe User do
     end
   end
   describe "disallows illegitimate names" do
-    ["tab\t", "newline\n",
-     '1234567890_234567890_234567890_234567890_234567890_234567890_234567890_234567890_234567890_234567890_',
-     ].each do |name_str|
+    ["tab\t", "newline\n", 'a' * 101].each do |name_str|
       it "'#{name_str}'" do
         lambda do
           u = create_user(:name => name_str)
